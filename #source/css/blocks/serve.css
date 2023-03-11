@@ -1,0 +1,68 @@
+.serve {
+  padding-bottom: 113px;
+}
+.serve__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 45px;
+}
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.columns__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 88px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+.columns__item:hover {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  color: #fff;
+  background-color: #f78434;
+}
+.columns__img {
+  margin-bottom: 15px;
+}
+.columns__title {
+  margin-bottom: 1px;
+}
+.columns__text {
+  margin-bottom: 25px;
+}
+.columns__button {
+  color: #f78434;
+}
+.columns__button a {
+  color: inherit;
+}
+.columns__button .btn, .columns__button .bnt:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.columns__button .btn:hover {
+  background-color: #fff;
+}

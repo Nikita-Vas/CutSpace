@@ -1,0 +1,15 @@
+.partners {
+  padding-top: 72px;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
+    img {
+      flex: 0 0 calc(25% - 40px);
+      min-width: 190px;
+    }
+  }
+}

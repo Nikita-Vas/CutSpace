@@ -1,0 +1,118 @@
+.testimonians {
+  padding-top: 171px;
+  overflow: hidden;
+  padding-bottom: 58px;
+
+  @media (max-width: 821px) {
+    padding-top: 72px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 58px;
+
+    @media (max-width: 821px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 453px;
+  }
+
+  &__text {
+    max-width: 390px;
+    color: #606060;
+  }
+}
+
+.cards {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    flex: 0 1 calc(33.33% - 30px);
+    min-width: 290px;
+    background-color: #fff;
+    position: relative;
+    color: #323232;
+
+    &:last-child::before {
+      content: '';
+      width: 80px;
+      height: 80px;
+      background: url('./../img/testimonians/icon.svg');
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      z-index: 1;
+    }
+
+    &:hover {
+      transition: box-shadow 0.1s ease-in;
+      box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+
+      .cards__location {
+        transition: color 0.2s ease-in;
+        color: #f78434;
+      }
+      & .cards__img::after {
+        display: block;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    padding-top: 58.28%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: url('./../img/testimonians/icon_play.svg') center no-repeat #fff;
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  &__content {
+    padding: 31px 29px;
+  }
+
+  &__text {
+    margin-bottom: 23px;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 1px;
+  }
+
+  &__location {
+    color: #58bebf;
+  }
+}

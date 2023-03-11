@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+// Reset file
+@import './base/reset.scss';
+
+// Base ===========================================
+@import './base/vars.scss';
+@import './base/base.scss';
+
+// Blocks ===========================================
+
+@import './blocks/header.scss';
+@import './blocks/home.scss';
+@import './blocks/partners.scss';
+@import './blocks/objects.scss';
+@import './blocks/cta.scss';
+@import './blocks/serve.scss';
+@import './blocks/benefits.scss';
+@import './blocks/_testimonians.scss';
+@import './blocks/_contact.scss';
+@import './blocks/_footer.scss';

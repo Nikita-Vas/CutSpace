@@ -1,0 +1,23 @@
+.partners {
+  padding-top: 72px;
+}
+.partners__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+.partners__inner img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 40px);
+          flex: 0 0 calc(25% - 40px);
+  min-width: 190px;
+}

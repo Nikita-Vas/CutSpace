@@ -1,0 +1,80 @@
+.cta {
+  padding-top: 154px;
+
+  @media (max-width: 821px) {
+    padding-top: 72px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 59px 0 0;
+
+    border-radius: 20px;
+
+    background: url('./../../img/cta/oval.svg') right top no-repeat #58bebf;
+
+    overflow: hidden;
+
+    @media (max-width: 1070px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__picture {
+    flex: 1 1 50%;
+
+    img {
+      border-radius: 0 21.6px 0 0;
+      border-top: 25px solid #fff;
+      border-right: 25px solid #fff;
+      box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+
+      @media (max-width: 821px) {
+        max-width: 100%;
+      }
+
+      @media (max-width: 602px) {
+        border-right: none;
+        border-radius: unset;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 1 50%;
+    padding: 38px 0 85px 96px;
+
+    background: url('./../../img/cta/oval_bottom.svg') -186px bottom no-repeat;
+
+    @media (max-width: 1070px) {
+      align-self: center;
+    }
+
+    @media (max-width: 821px) {
+      padding: 0 15px 85px 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    max-width: 354px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    max-width: 354px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    max-width: 364px;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+@import 'vars.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--fluid {
+  padding: 0;
+  padding-right: calc((100% - #{$container-width}) / 2 + #{$container-padding});
+  max-width: 100%;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+}
+
+.btn {
+  border-radius: 29px;
+  background-color: $accent-color;
+  display: inline-block;
+
+  padding: 18px 37px 16px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+  -webkit-box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.6);
+
+  &:active {
+    -webkit-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 2px;
+  }
+
+  &:hover {
+    background-color: $accent-color-hover;
+  }
+}
+
+.btn--white {
+  color: #323232;
+  background-color: #fff;
+
+  &-play {
+    padding: 18px 29px 16px 50px;
+    position: relative;
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &:hover {
+    background-color: #e3eded;
+  }
+}
+
+.form-btn,
+.form-btn:active {
+  box-shadow: none;
+
+  @media (max-width: 500px) {
+    align-self: stretch;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+
+  @media (max-width: 560px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 25px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.content {
+  color: #323232;
+  font-family: 'Poppins';
+  font-style: normal;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+.content--white {
+  color: #fff;
+}

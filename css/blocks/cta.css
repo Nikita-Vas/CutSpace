@@ -1,0 +1,49 @@
+.cta {
+  margin-bottom: 149px;
+}
+.cta__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 59px 0 0;
+  border-radius: 20px;
+  background: url("./../../img/cta/oval.svg") right top no-repeat #58bebf;
+  overflow: hidden;
+}
+.cta__picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+  border-radius: 0 21.6px 0 0;
+  border-top: 25px solid #fff;
+  border-right: 25px solid #fff;
+}
+.cta__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 38px 0 85px 96px;
+  background: url("./../../img/cta/oval_bottom.svg") -186px bottom no-repeat;
+}
+.cta__title {
+  margin-bottom: 15px;
+  max-width: 354px;
+}
+.cta__text {
+  margin-bottom: 30px;
+  max-width: 354px;
+}
+.cta__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  max-width: 364px;
+}
